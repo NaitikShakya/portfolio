@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Naitik Shakya | Aspiring Game Designer</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Scroll to Top Button -->
+  <button id="topBtn">&#8679;</button>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Naitik Shakya</h1>
+      <p>Aspiring Game Designer</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>Hello! I’m Naitik Shakya, a 16-year-old high school student in 11th grade, aspiring to become a professional game designer. I’m passionate about storytelling, design, and technology, and I’m eager to learn, create, and contribute to the game industry. This site is where I share my growth and projects as I work towards my goal.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Coming Soon</h3>
+        <p>New projects will appear here soon.</p>
+      </div>
+      <div class="project-card">
+        <h3>Coming Soon</h3>
+        <p>Stay tuned for future updates!</p>
+      </div>
+      <div class="project-card">
+        <h3>Coming Soon</h3>
+        <p>More exciting work on the way.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:naitikshakya624@gmail.com">naitikshakya624@gmail.com</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Naitik Shakya. All rights reserved.
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Scroll to Top Button
+    const topBtn = document.getElementById('topBtn');
+    window.onscroll = () => {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+    topBtn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>
