@@ -1,0 +1,285 @@
+export default function NaitikPortfolio() {
+  return (
+    <main className="min-h-screen bg-[#050505] text-white overflow-x-hidden selection:bg-white selection:text-black">
+      {/* Background Effects */}
+      <div className="fixed inset-0 -z-10 overflow-hidden">
+        <div className="absolute top-[-20%] left-[-10%] w-[40rem] h-[40rem] bg-pink-500/10 blur-3xl rounded-full animate-pulse" />
+        <div className="absolute bottom-[-20%] right-[-10%] w-[40rem] h-[40rem] bg-blue-500/10 blur-3xl rounded-full animate-pulse" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:70px_70px]" />
+      </div>
+
+      {/* Navbar */}
+      <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-black/20 border-b border-white/10">
+        <div className="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+          <div>
+            <h1 className="text-xl md:text-2xl font-black tracking-[0.2em] uppercase">
+              NAITIK
+            </h1>
+          </div>
+
+          <nav className="hidden md:flex items-center gap-8 text-sm uppercase tracking-widest text-zinc-400">
+            <a href="#about" className="hover:text-white transition">About</a>
+            <a href="#skills" className="hover:text-white transition">Skills</a>
+            <a href="#journey" className="hover:text-white transition">Journey</a>
+            <a href="#future" className="hover:text-white transition">Future</a>
+            <a href="#contact" className="hover:text-white transition">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* Hero */}
+      <section className="min-h-screen flex items-center px-5 pt-24">
+        <div className="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center">
+          <div className="space-y-8">
+            <div className="inline-flex items-center gap-3 border border-white/10 bg-white/5 backdrop-blur-xl rounded-full px-4 py-2 text-sm uppercase tracking-[0.2em] text-zinc-300">
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+              Full Stack Game Developer
+            </div>
+
+            <div className="space-y-3">
+              <h2 className="text-6xl md:text-8xl font-black leading-none tracking-tight">
+                BUILDING
+              </h2>
+
+              <h2 className="text-6xl md:text-8xl font-black leading-none tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-blue-500">
+                EXPERIENCES
+              </h2>
+            </div>
+
+            <p className="max-w-2xl text-zinc-400 text-lg leading-relaxed">
+              I'm Naitik, an aspiring full-stack game developer passionate about gameplay systems,
+              worldbuilding, storytelling, interactive experiences, and cinematic design.
+              I enjoy both the technical and creative side of game development — from programming mechanics
+              to designing immersive ideas and experiences.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <button className="px-8 py-4 rounded-2xl bg-white text-black font-bold hover:scale-105 transition-all duration-300 shadow-2xl shadow-white/20">
+                Explore Portfolio
+              </button>
+
+              <button className="px-8 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl hover:bg-white/10 transition-all duration-300">
+                My Journey
+              </button>
+            </div>
+          </div>
+
+          {/* Hero Visual */}
+          <div className="relative flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-lg group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-red-500 to-blue-500 blur-2xl opacity-60 group-hover:opacity-100 transition duration-500 rounded-[2rem]" />
+
+              <div className="relative rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-2xl p-8 overflow-hidden">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.1),transparent_35%)]" />
+
+                <div className="relative z-10 space-y-6">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-zinc-500 uppercase tracking-widest text-xs">
+                        Creative Focus
+                      </p>
+
+                      <h3 className="text-3xl font-black mt-2">
+                        GAME DESIGN + PROGRAMMING
+                      </h3>
+                    </div>
+
+                    <div className="px-3 py-1 rounded-full border border-green-500/20 bg-green-500/10 text-green-300 text-xs uppercase tracking-widest">
+                      Learning
+                    </div>
+                  </div>
+
+                  <div className="aspect-video rounded-2xl border border-white/10 bg-[#0d0d0d] flex items-center justify-center text-zinc-600 text-lg font-medium overflow-hidden">
+                    Future Project Showcase
+                  </div>
+
+                  <div className="grid grid-cols-3 gap-4">
+                    <div className="rounded-2xl bg-white/5 border border-white/10 p-4 text-center hover:bg-white/10 transition-all duration-300">
+                      <h4 className="text-2xl font-black">UE5</h4>
+                      <p className="text-zinc-500 text-sm">Engine</p>
+                    </div>
+
+                    <div className="rounded-2xl bg-white/5 border border-white/10 p-4 text-center hover:bg-white/10 transition-all duration-300">
+                      <h4 className="text-2xl font-black">WEB</h4>
+                      <p className="text-zinc-500 text-sm">Frontend</p>
+                    </div>
+
+                    <div className="rounded-2xl bg-white/5 border border-white/10 p-4 text-center hover:bg-white/10 transition-all duration-300">
+                      <h4 className="text-2xl font-black">RPG</h4>
+                      <p className="text-zinc-500 text-sm">Design</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section id="about" className="py-32 px-5 border-t border-white/10">
+        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <p className="uppercase tracking-[0.3em] text-zinc-500 mb-4 text-sm">
+              About Me
+            </p>
+
+            <h2 className="text-5xl md:text-7xl font-black leading-none">
+              CREATIVE
+              <span className="block text-zinc-500">
+                TECHNOLOGIST
+              </span>
+            </h2>
+          </div>
+
+          <div className="space-y-6 text-zinc-400 text-lg leading-relaxed">
+            <p>
+              I love creating immersive ideas, emotional experiences, gameplay systems,
+              and interactive worlds that feel memorable.
+            </p>
+
+            <p>
+              While art isn't my strongest skill, I focus heavily on technical development,
+              storytelling, game mechanics, UI/UX, and overall creative direction.
+            </p>
+
+            <p>
+              My goal is to become a developer capable of building cinematic and meaningful game experiences.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills */}
+      <section id="skills" className="py-32 px-5 border-t border-white/10">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16">
+            <p className="uppercase tracking-[0.3em] text-zinc-500 mb-4 text-sm">
+              Skills
+            </p>
+
+            <h2 className="text-5xl md:text-7xl font-black leading-none">
+              MY
+              <span className="block text-zinc-500">STACK</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              'Gameplay Programming',
+              'Game Design',
+              'Worldbuilding',
+              'Storytelling',
+              'UI/UX Design',
+              'HTML/CSS/JS',
+              'Unreal Engine 5',
+              'Blender Basics'
+            ].map((skill, index) => (
+              <div
+                key={index}
+                className="rounded-[1.5rem] border border-white/10 bg-white/5 backdrop-blur-xl p-6 hover:-translate-y-2 hover:bg-white/10 transition-all duration-500"
+              >
+                <h3 className="text-xl font-bold leading-snug">
+                  {skill}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Journey */}
+      <section id="journey" className="py-32 px-5 border-t border-white/10">
+        <div className="max-w-5xl mx-auto text-center space-y-10">
+          <p className="uppercase tracking-[0.3em] text-zinc-500 text-sm">
+            Development Journey
+          </p>
+
+          <h2 className="text-5xl md:text-7xl font-black leading-none">
+            LEARNING.
+            <span className="block text-zinc-500">
+              BUILDING.
+            </span>
+            CREATING.
+          </h2>
+
+          <p className="text-zinc-400 text-lg leading-relaxed max-w-3xl mx-auto">
+            Currently exploring game development, programming, cinematic storytelling,
+            web experiences, and immersive interactive systems while continuously improving my skills.
+          </p>
+        </div>
+      </section>
+
+      {/* Future */}
+      <section id="future" className="py-32 px-5 border-t border-white/10">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-16">
+            <p className="uppercase tracking-[0.3em] text-zinc-500 mb-4 text-sm">
+              Future Projects
+            </p>
+
+            <h2 className="text-5xl md:text-7xl font-black leading-none">
+              COMING
+              <span className="block text-zinc-500">SOON</span>
+            </h2>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            {[1,2,3].map((card) => (
+              <div
+                key={card}
+                className="rounded-[2rem] border border-white/10 bg-white/5 backdrop-blur-xl overflow-hidden hover:-translate-y-2 transition-all duration-500"
+              >
+                <div className="aspect-video bg-[#0d0d0d] flex items-center justify-center text-zinc-600 border-b border-white/10">
+                  Project Placeholder
+                </div>
+
+                <div className="p-6 space-y-4">
+                  <h3 className="text-2xl font-black">
+                    Future Project
+                  </h3>
+
+                  <p className="text-zinc-400 leading-relaxed">
+                    This section will showcase future games, systems, experiments,
+                    and interactive experiences currently in development.
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="py-32 px-5 border-t border-white/10">
+        <div className="max-w-4xl mx-auto text-center space-y-10">
+          <h2 className="text-5xl md:text-7xl font-black leading-none">
+            LET'S CREATE
+            <span className="block text-zinc-500">
+              SOMETHING COOL.
+            </span>
+          </h2>
+
+          <p className="text-zinc-400 text-lg leading-relaxed max-w-2xl mx-auto">
+            Open to collaborations, creative opportunities, and future game development projects.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-5">
+            <button className="px-8 py-4 rounded-2xl bg-white text-black font-bold hover:scale-105 transition-all duration-300 shadow-2xl shadow-white/20">
+              Contact Me
+            </button>
+
+            <button className="px-8 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl hover:bg-white/10 transition-all duration-300">
+              Socials
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-10 px-5 border-t border-white/10 text-center text-zinc-500 text-sm">
+        © 2026 Naitik Shakya.
+      </footer>
+    </main>
+  )
+}
